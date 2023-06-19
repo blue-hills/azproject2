@@ -11,6 +11,7 @@
     }
     ?>
 	<h1>MySQL Table Viewer</h1>
+    <h2><?php echo "Host: " . gethostname(); ?></h2>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> ">
 	SQL: <textarea name="sql" rows="5" cols="40"><?php echo $sql; ?></textarea>
 	<input type="submit" name="submit" value="Submit"> 
